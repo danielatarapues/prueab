@@ -70,6 +70,7 @@ DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/database?schema=public"
 ```
 npx prisma db push
 npx prisma generate
+npx prisma db seed
 ```
 
 ---
