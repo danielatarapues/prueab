@@ -47,7 +47,7 @@ docker run --name redis-taller -p 6379:6379 -d redis
 
 ---
 
-## 2️⃣ Instalar dependencias
+## 3️⃣ Instalar dependencias
 
 ```
 npm install
@@ -55,7 +55,7 @@ npm install
 
 ---
 
-## 3️⃣ Configurar variables de entorno
+## 4️⃣ Configurar variables de entorno
 
 Crear archivo `.env`
 
@@ -65,7 +65,7 @@ DATABASE_URL="postgresql://USER:PASSWORD@localhost:5432/database?schema=public"
 
 ---
 
-## 4️⃣ Preparar base de datos
+## 5️⃣ Preparar base de datos
 
 ```
 npx prisma db push
@@ -74,7 +74,7 @@ npx prisma generate
 
 ---
 
-## 5️⃣ Ejecutar servidor
+## 6️⃣ Ejecutar servidor
 
 ```
 npm run dev
@@ -100,16 +100,6 @@ El proyecto incluye evidencias de:
 - Comparación de payload **con y sin Lazy Loading**
 
 Las capturas y análisis se encuentran en el informe técnico.
-
----
-
-# 📚 Bibliografía
-
-- Node.js Documentation
-- Redis Documentation
-- Prisma ORM Documentation
-- BullMQ Documentation
-- DataLoader (Facebook)
 
 ---
 
