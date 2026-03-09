@@ -6,10 +6,10 @@ API REST desarrollada en **Node.js con Express** enfocada en demostrar **técnic
 
 El proyecto implementa estrategias comunes en sistemas backend modernos para mejorar:
 
-* ⚡ **Tiempo de respuesta**
-* 📉 **Reducción de consultas innecesarias**
-* 🔄 **Procesamiento asíncrono**
-* 🧠 **Uso eficiente de memoria y recursos**
+- ⚡ **Tiempo de respuesta**
+- 📉 **Reducción de consultas innecesarias**
+- 🔄 **Procesamiento asíncrono**
+- 🧠 **Uso eficiente de memoria y recursos**
 
 ---
 
@@ -17,11 +17,10 @@ El proyecto implementa estrategias comunes en sistemas backend modernos para mej
 
 Simular un entorno donde múltiples clientes realizan consultas repetitivas a una API y aplicar estrategias para optimizar su rendimiento mediante:
 
-* **Caché de consultas con Redis**
-* **Prevención de consultas N+1 con DataLoader**
-* **Procesamiento asíncrono con Job Queue (BullMQ)**
-* **Lazy-loading de relaciones y paginación**
-
+- **Caché de consultas con Redis**
+- **Prevención de consultas N+1 con DataLoader**
+- **Procesamiento asíncrono con Job Queue (BullMQ)**
+- **Lazy-loading de relaciones y paginación**
 
 ---
 
@@ -31,15 +30,16 @@ Simular un entorno donde múltiples clientes realizan consultas repetitivas a un
 
 Instalar:
 
-* Node.js
-* PostgreSQL
-* Redis
-* Docker
+- Node.js
+- PostgreSQL
+- Redis
+- Docker (recomendado para Redis)
 
 ---
 
 ## 2️⃣ Levantar Servicios Externos (Redis)
-Para que el sistema de caché y colas funcione, inicia el contenedor de Redis:
+
+Para que el sistema de caché y colas funcione, es necesario tener Redis activo. Si usas Docker, ejecuta el siguiente comando en tu terminal:
 
 ```
 docker run --name redis-taller -p 6379:6379 -d redis
@@ -95,10 +95,10 @@ El informe con las capturas de pantalla de los logs, comparativas de tiempos (si
 
 El proyecto incluye evidencias de:
 
-* Comparación de tiempos **con y sin caché**
-* Reducción de consultas **N+1 con DataLoader**
-* Ejecución de tareas en **Job Queue**
-* Comparación de payload **con y sin Lazy Loading**
+- Comparación de tiempos **con y sin caché**
+- Reducción de consultas **N+1 con DataLoader**
+- Ejecución de tareas en **Job Queue**
+- Comparación de payload **con y sin Lazy Loading**
 
 Las capturas y análisis se encuentran en el informe técnico.
 
